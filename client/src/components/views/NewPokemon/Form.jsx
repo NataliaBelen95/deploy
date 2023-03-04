@@ -36,7 +36,6 @@ const Form = () => {
     height: "",
     speed: "",
     types: [],
-    likes: "",
   });
   ///
   const [touched, setTouched] = useState({
@@ -82,7 +81,6 @@ const Form = () => {
         weight: "",
         speed: "",
         types: [],
-        likes: "",
       });
 
       history.push("/home");
@@ -234,20 +232,7 @@ const Form = () => {
               />
               {touched.image && errors.image && <p>{errors.image}</p>}
             </div>
-            <div className={style.groupInputs}>
-              <label htmlFor="likes" className={style.inputsNames}>
-                Likes:
-              </label>
-              <input
-                className={style.input}
-                type="number"
-                min={1}
-                max={100}
-                value={input.likes}
-                name="likes"
-                onChange={(e) => handleInputChange(e)}
-              />
-            </div>
+
             <div className={style.groupInputs}>
               <label htmlFor="types" className={style.inputsNames}>
                 types:
