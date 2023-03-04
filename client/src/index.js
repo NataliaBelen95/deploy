@@ -6,7 +6,7 @@ import store from "./redux/store/store";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import axios from "axios";
-axios.defaults.baseURL = `https://deploy-production-1b77.up.railway.app/`;
+axios.defaults.baseURL = `https://deploy-three-tau.vercel.app/`;
 
 ReactDOM.render(
   <Provider store={store}>
