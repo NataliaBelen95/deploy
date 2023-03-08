@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import style from "../Landing/Landing.module.css";
 //import img from "../../../assets/landing1.png";
-import imgAsh from "../../../assets/fondolanding.png";
+import img from "../../../assets/landing.4.png";
 import pokebola from "../../../assets/pokebola.png";
 //import charimg from "../../../assets/charm.png";
 const Landing = () => {
@@ -11,7 +11,7 @@ const Landing = () => {
       <div className={style.division}></div>
       <div className={style.division2}>
         <div className={style.imgAsh}>
-          <img src={imgAsh} alt={"imgLanding"} />
+          <img src={img} alt={"imgLanding"} />
         </div>
         <div className={style.info}>
           <h1>Hello!</h1>

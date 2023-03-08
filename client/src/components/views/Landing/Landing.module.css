@@ -7,8 +7,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  background-color: #B0E0F6;
+  height: 100vh; /* Set the height of the div to full viewport height */
+  width: 100%;
+
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(170,175,164,1) 0%, rgba(211,218,204,1) 0%, rgba(242,241,217,1) 1%, rgba(0,0,0,1) 54%, rgba(0,0,0,1) 58%, rgba(0,0,0,1) 100%);
+
 }
 
 .division {
@@ -17,6 +21,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
+ 
 }
 
 .info {
@@ -26,9 +31,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color:#FEE11A;
 
-  background-color: #B0E0F6;
- 
 
   text-align: center;
 }
@@ -38,14 +42,14 @@
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #003B72;
+  color: #FEE11A;
 }
 
 .info h2 {
   font-size: 1.5rem;
   font-weight: 400;
   margin-top: 2rem;
-  color: #999;
+  color: #fff;
   text-shadow: 1px 1px 1px black;
 }
 
@@ -59,11 +63,13 @@
 .division2 {
   display: flex;
   justify-content: center;
+  display: flex;
 }
 
 .imgAsh {
   margin-top: 2rem;
   width: 100%;
+  display: flex;
   
 }
 
@@ -71,8 +77,11 @@
   width: 500px;
   height: 300px;
   object-fit: contain;
+  border-image: none;
+ 
 
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  
 }
 
 .linkin {
@@ -115,9 +124,10 @@
   @media screen and (max-width: 858px) {
     .LandingCont {
       flex-direction: column;
-      width: 100%;
-      margin: 0 auto;
-      margin-top: 5rem;
+      height: 100vh; /* Set the height of the div to full viewport height */
+  width: 100%;
+     
+     
     }
   
    .division{

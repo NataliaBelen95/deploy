@@ -11,17 +11,17 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/" component={Landing}></Route>
-      </Switch>
 
-      <NavBar />
-
-      <Switch>
-        <Route exact path="/Pokes" component={Cards}></Route>
-        <Route exact path="/aboutMe" component={AboutMe}></Route>
-
-        <Route exact path="/home" component={Home}></Route>
-        <Route exact path="/detail/:id" component={Detail}></Route>
-        <Route exact path="/createPoke" component={NewPokemon}></Route>
+        <Route>
+          <NavBar />
+          <Switch>
+            <Route exact path="/Pokes" component={Cards}></Route>
+            <Route exact path="/aboutMe" component={AboutMe}></Route>
+            <Route exact path="/home" component={Home}></Route>
+            <Route exact path="/detail/:id" component={Detail}></Route>
+            <Route exact path="/createPoke" component={NewPokemon}></Route>
+          </Switch>
+        </Route>
       </Switch>
     </div>
   );

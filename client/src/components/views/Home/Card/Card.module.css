@@ -57,3 +57,38 @@ text-align: center;
  
  
  }
+
+ 
+
+@media only screen and (max-width: 1024px) {
+
+  
+  .CardContainer{
+    width: 160px;
+    height: 200px;
+   
+  }
+  .divImg {
+    width: 100%;
+    height: 100px;
+    background-color: #ff9800;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+  
+ .title {
+  
+  font-size: 1.5rem;
+}
+
+  
+ .typePokeDiv h2{
+
+  font-size: 1.2rem;
+}
+    
+  }

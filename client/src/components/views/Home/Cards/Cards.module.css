@@ -24,11 +24,11 @@
   background: linear-gradient(45deg, #EE4025, #E17926);
   border: none;
   color: #ffffff;
-  text-shadow: 1px 1px 1px #000000;
+
   font-weight: bold;
-  padding: 10px;
-  width: 10rem;
-  font-size: 1rem;
+  padding: 6px;
+  width: 8rem;
+  font-size: 0.8rem;
   cursor: pointer;
   text-align: center;
   border-radius: 5px;
@@ -44,7 +44,7 @@
   .selects option {
     color: #000;
     background-color: #fff;
-    font-size: 1rem;
+    font-size: 2rem;
     font-family: sans-serif;
     }
 
@@ -79,3 +79,33 @@
       transform: rotate(360deg);
   }
   } 
+
+
+
+
+  
+
+@media only screen and (max-width: 1024px) {
+
+  .CardsContainer {
+  
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 10rem));
+  margin-left: 0.2rem;
+    
+  
+  }
+ 
+.selects{
+ 
+
+  padding: 6px;
+  width: 7rem;
+  font-size: 10px;
+
+  margin:1rem
+  
+  }
+
+  
+  
+}
